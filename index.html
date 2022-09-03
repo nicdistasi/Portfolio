@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/p5.js"></script>
+    <script src="js/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/orq8pxm.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <title>Nicolas DiStasi</title>
+</head>
+<body>
+    <header>
+        <img class="scheme-img" id="header-img" src="assets/SVG/logotype-light.svg" alt="main logo">
+        <ul id="header-list">
+            <a href="about">about</a>
+            <a href="contact">contact</a>
+            <i class="icon-18 dark" id="scheme-toggle" data-feather="sun"></i>
+        </ul>
+        <i class="icon-24 dark mobile" id="menu-open" data-feather="menu"></i>
+    </header>
+
+    <div id="main-content">
+
+        <div id="landing-intro">
+            <h2 id="intro-header">Hi! My name is Nicolas DiStasi</h2>
+            <p>I'm a Graphic Designer based in San Francisco. I specialize in UI/UX design, however, as you'll see below, I design in other areas as well. You can learn more about me <a href="">here</a>.</p>
+        </div>
+        <br>
+        <div id="projects-grid">
+            <ul>
+                <div class="item-cont">
+                    <a href="">
+                        <img class="item-bg" src="assets/IMG/crashlanding.jpg" alt="">
+                        <div class="item-text-cont">
+                            <h2>Pixel Art</h2>
+                        </div>
+                    </a> 
+                </div>
+                <div class="item-cont">
+                    <a href="">
+                        <img class="item-bg" src="assets/IMG/prntxperiment.jpg" alt="">
+                        <div class="item-text-cont">
+                            <h2>Print Scan Experiments</h2>
+                        </div>
+                    </a> 
+                </div>
+                <div class="item-cont"></div>
+                <div class="item-cont"></div>
+                <div class="item-cont"></div>
+                <div class="item-cont"></div>
+            </ul>
+            
+        </div>
+
+    </div>
+
+    <footer>
+        <ul id="socials-list">
+            <a class="socials-link" id="email-link" href="mailto:nicstasi04@gmail.com">
+                <i class="icon-18 dark socials-icon" data-feather="mail"></i>
+            </a>
+            <a class="socials-link" id="instagram-link" href="https://www.instagram.com/imstaasi/">
+                <i class="icon-18 dark socials-icon" data-feather="instagram"></i>
+            </a>
+            <a class="socials-link" id="dribbble-link" href="https://dribbble.com/nicstasi04">
+                <i class="icon-18 dark socials-icon" data-feather="dribbble"></i>
+            </a>
+        </ul>
+    </footer>
+
+    <div class="mobile" id="mobile-menu">
+        <div id="menu-head">
+            <i class="icon-24 dark mobile" id="menu-close" data-feather="x"></i>
+            <i class="icon-24 mobile dark" id="scheme-toggle-mobile" data-feather="sun"></i>
+        </div>
+        <a class="menu-item-mobile" href=""><h3>about</h3></a>
+        <a class="menu-item-mobile" href=""><h3>contact</h3></a>
+    </div>
+
+    <div id="cursor-canvas"></div>
+    
+    <script> feather.replace() </script>
+    <script src="js/cursor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
